@@ -1,0 +1,173 @@
+:root {
+  --main-design-blue: #2196f3;
+  --main-design-black: #000;
+  --main-design-white: #fff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --secondary-background-color: #2f303a;
+  --contrast-elements-color: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.hero-header {
+  color: var(--main-design-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 116%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.first-logo,
+.second-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+
+.first-logo span:nth-child(1),
+.second-logo span:nth-child(1) {
+  color: var(--main-design-blue);
+}
+
+.first-logo span:nth-child(2) {
+  color: var(--main-design-black);
+}
+
+.second-logo span:nth-child(2) {
+  color: var(--main-design-white);
+}
+.list {
+  list-style: none;
+}
+.site-nav-links {
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  text-decoration: none;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.hero-container,
+.footer-container {
+  background-color: var(--secondary-background-color);
+}
+.button-box {
+  background-color: var(--main-design-blue);
+  color: var(--main-design-white);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+}
+.article-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.article-overview {
+  color: var(--secondary-text-color);
+  line-height: 146%;
+  letter-spacing: 0.03em;
+}
+.secondary-header {
+  text-align: center;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+.about-container {
+  background-color: var(--contrast-elements-color);
+}
+.photo-box {
+  background-color: var(--main-design-white);
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.position {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 139%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background-color: var(--contrast-elements-color);
+  border: none;
+  cursor: pointer;
+}
+.filter-button:focus,
+.filter-button:hover {
+  background: var(--main-design-blue);
+  color: var(--main-design-white);
+}
+
+.portfolio-element {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 188%;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+
+.address-info {
+  color: var(--main-design-white);
+  line-height: 171%;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.email,
+.phone {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+.email:hover,
+.phone:hover,
+.email:focus,
+.email:hover,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--main-design-blue);
+}
