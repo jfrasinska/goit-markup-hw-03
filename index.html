@@ -6,7 +6,10 @@
     <title>Main page</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,31 +22,40 @@
   <body>
     <!--Header-->
     <header>
-      <a class="site-nav-links logo" href="./index.html"
-        ><div class="first-logo">
-          <span>Web</span>
-          <span>Studio</span>
-        </div></a
-      >
-      <nav>
-        <ul class="list">
-          <li><a class="nav-link" href="#">Agencja</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div>
-        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="phone" href="tel:+48111111111">+48111111111</a>
-      </div>
+      <section class="container header-nav-container">
+        <a class="site-nav-links logo" href="./index.html"
+          ><div class="first-logo">
+            <span>Web</span>
+            <span>Studio</span>
+          </div></a
+        >
+        <nav class="nav-bar">
+          <ul class="list">
+            <li><a class="nav-link" href="#">Agencja</a></li>
+            <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="nav-link" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a class="email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a class="phone" href="tel:+48111111111">+48111111111</a>
+        </div>
+      </section>
     </header>
     <!--Main part-->
     <main>
-      <section class="hero-container">
-        <h1 class="hero-header">Efektywne rozwiązania dla waszego biznesu</h1>
-        <button class="button-box">Zamów usługę</button>
+      <!--Hero section-->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <h1 class="hero-header">Efektywne rozwiązania dla waszego biznesu</h1>
+          <button class="button-box">Zamów usługę</button>
+        </div>
       </section>
-      <section>
+      <!--End of hero section-->
+      <!--Article section-->
+      <section class="container section">
         <ul class="article-box list">
           <li>
             <article>
@@ -90,109 +102,119 @@
             </article>
           </li>
         </ul>
+        <!--End of article section-->
+        <!--Information section-->
+        <div class="information-container">
+          <h2 class="secondary-header">Czym się zajmujemy</h2>
+          <ul class="portfolio list">
+            <li>
+              <img
+                src="images/img_1.jpeg"
+                alt="Stnowisko pracy z wydocznym monitorem, tabltem, klawiaturą i notatkami"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img_2.jpeg"
+                alt="Biurko z laptopem i monitorem"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img_3.jpeg"
+                alt="Paleta kolorów na ekranie tableta, na tle biurka"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-
-      <section class="information-container">
-        <h2 class="secondary-header">Czym się zajmujemy</h2>
-        <ul class="portfolio">
-          <li>
-            <img
-              src="images/img_1.jpeg"
-              alt="Stnowisko pracy z wydocznym monitorem, tabltem, klawiaturą i notatkami"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img_2.jpeg"
-              alt="Biurko z laptopem i monitorem"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img_3.jpeg"
-              alt="Paleta kolorów na ekranie tableta, na tle biurka"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <!--End of information section-->
+      <!--Team section-->
+      <section class="team-section">
+        <div class="container section team-container">
+          <h2 class="secondary-header">Nasz zespół</h2>
+          <ul class="team-items">
+            <li>
+              <div class="photo-box">
+                <img
+                  src="images/img_4.jpeg"
+                  alt="Zdjęcie członka zespołu John Doe"
+                  width="270"
+                  height="260"
+                />
+                <p class="name">John Doe</p>
+                <p class="position">Product Designer</p>
+              </div>
+            </li>
+            <li>
+              <div class="photo-box">
+                <img
+                  src="images/img_5.jpeg"
+                  alt="Zdjęcie członka zespołu John Doe"
+                  width="270"
+                  height="260"
+                />
+                <p class="name">John Doe</p>
+                <p class="position">Frontend Developer</p>
+              </div>
+            </li>
+            <li>
+              <div class="photo-box">
+                <img
+                  src="images/img_6.jpeg"
+                  alt="Zdjęcie członka zespołu John Doe"
+                  width="270"
+                  height="260"
+                />
+                <p class="name">John Doe</p>
+                <p class="position">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <div class="photo-box">
+                <img
+                  src="images/img_7.jpeg"
+                  alt="Zdjęcie członka zespołu John Doe"
+                  width="270"
+                  height="260"
+                />
+                <p class="name">John Doe</p>
+                <p class="position">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="about-container">
-        <h2 class="secondary-header">Nasz zespół</h2>
-        <ul class="portfolio">
-          <li>
-            <div class="photo-box">
-              <img
-                src="images/img_4.jpeg"
-                alt="Zdjęcie członka zespołu John Doe"
-                width="270"
-                height="260"
-              />
-              <p class="name">John Doe</p>
-              <p class="position">Product Designer</p>
-            </div>
-          </li>
-          <li>
-            <div class="photo-box">
-              <img
-                src="images/img_5.jpeg"
-                alt="Zdjęcie członka zespołu John Doe"
-                width="270"
-                height="260"
-              />
-              <p class="name">John Doe</p>
-              <p class="position">Frontend Developer</p>
-            </div>
-          </li>
-          <li>
-            <div class="photo-box">
-              <img
-                src="images/img_6.jpeg"
-                alt="Zdjęcie członka zespołu John Doe"
-                width="270"
-                height="260"
-              />
-              <p class="name">John Doe</p>
-              <p class="position">Marketing</p>
-            </div>
-          </li>
-          <li>
-            <div class="photo-box">
-              <img
-                src="images/img_7.jpeg"
-                alt="Zdjęcie członka zespołu John Doe"
-                width="270"
-                height="260"
-              />
-              <p class="name">John Doe</p>
-              <p class="position">UI Designer</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <!--End of team container-->
     </main>
     <!--Footer-->
     <footer>
       <div class="footer-container">
-        <a class="logo" href="index.html"
-          ><div class="second-logo">
-            <span>Web</span>
-            <span>Studio</span>
-          </div></a
-        >
-        <address>
-          <span class="address-info">m. Warszawa, Aleje Jerozolimskie 21</span>
-          <div>
-            <a class="email" href="mailto:minfo@example.com"
-              >info@example.com</a
+        <div class="container">
+          <a class="logo" href="index.html"
+            ><div class="second-logo">
+              <span>Web</span>
+              <span>Studio</span>
+            </div></a
+          >
+          <address>
+            <span class="address-info"
+              >m. Warszawa, Aleje Jerozolimskie 21</span
             >
-            <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
-          </div>
-        </address>
+            <div>
+              <a class="email" href="mailto:minfo@example.com"
+                >info@example.com</a
+              >
+              <a class="phone" href="tel:+48111111111">+48 111 111 111</a>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
